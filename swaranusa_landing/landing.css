@@ -1,0 +1,302 @@
+/* Reset default browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+
+header {
+    background: #f8f8f8;
+    color: #000000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo-text img {
+    width: 20px;
+    height: auto;
+}
+
+.logo-text h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+
+.hero {
+    height: 90vh;
+    background: #543a14 center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-left {
+    flex: 1;
+    margin: 50px;
+    text-align: left;
+}
+
+.hero-left h2 {
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-left button {
+    padding: 8px 16px;
+    background: #f0bb78;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero-left button:hover {
+    background-color: #d49b56;
+}
+
+.hero-right img {
+    height: 90vh;
+}
+
+/* Section */
+
+.section {
+    padding: 50px 50px 0 50px;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 28px;
+    text-align: left;
+    margin: auto 75px;
+}
+
+.section h4 {
+    font-size: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.populer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.populer-container img {
+    filter: grayscale(100%);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.populer-container img:hover {
+    filter: grayscale(0%);
+}
+
+.populer-top {
+    display: flex;
+    gap: 25px;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.populer-bottom {
+    display: flex;
+    gap: 25px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.bottom-right-top {
+    display: flex;
+    gap: 25px;
+}
+
+.pelajari-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.pelajari-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 1000px;
+    max-height: 175px;
+    margin: 0 auto;
+}
+
+.pelajari-left img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.pelajari-right {
+    text-align: left;
+    margin: 10px 20px;
+}
+
+/* Footer */
+
+footer {
+    background: #543a14;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    margin: 20px 50px;
+}
+
+.footer-top {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-about {
+    text-align: left;
+    max-width: 250px;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-text img {
+    width: 20px;
+    height: auto;
+}
+
+.about-text h1 {
+    font-size: 20px;
+}
+
+.footer-about p {
+    margin-top: 15px;
+}
+
+.footer-navigation {
+    flex: 1;
+    text-align: left;
+    max-width: 250px;
+}
+
+.footer-navigation h1 {
+    font-size: 20px;
+}
+
+.footer-navigation ul {
+    list-style: none;
+}
+
+.footer-navigation li {
+    margin: 15px 0;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-navigation a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    flex: 1;
+    text-align: left;
+    max-width: 250px;
+}
+
+.social-icons {
+    margin: 15px auto;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.footer-bottom hr {
+    border: 1px solid #ffffff;
+    margin: 25px 0;
+}
+
+.footer-bottom p {
+    text-align: center;
+}

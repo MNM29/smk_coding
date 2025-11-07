@@ -1,0 +1,140 @@
+/* Reset default browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+header {
+    background: #f8f8f8;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo-text img {
+    width: 20px;
+    height: auto;
+}
+
+.logo-text h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.left-side {
+    border-right: 2px solid #000000;
+    text-align: center;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.left-side h1 {
+    border-bottom: 2px solid #000000;
+    font-size: 16px;
+    padding: 25px 75px;
+}
+
+.left-side div a {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.right-container {
+    margin-left: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.kelola-profile {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.kelola-profile img,
+.kelola-profile h2 {
+    margin-bottom: 10px;
+}
+
+.kelola-profile img {
+    border-radius: 50%;
+}
+
+.kelola-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.kelola-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.kelola-left div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.kelola-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 100%;
+    padding: 25px;
+}

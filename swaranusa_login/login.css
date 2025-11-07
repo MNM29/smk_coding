@@ -1,0 +1,174 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 85vw;
+    height: 90vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 0;
+}
+
+/* Left side */
+.left-side {
+    background: url(../assets/login.png) center/cover no-repeat;
+    border-radius: 15px;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.overlay button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.overlay a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Right side */
+.right-side {
+    width: 50%;
+    margin-left: 25px;
+    padding: 40px 50px;
+}
+
+.right-side h1 {
+    margin-bottom: 10px;
+}
+
+.right-side p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.right-side a {
+    color: #0047ff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.right-side a:hover {
+    text-decoration: underline;
+}
+
+form input {
+    color: #000000;
+    background-color: #f3c27a;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    color: #ffffff;
+    background-color: #a77944;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #8b581e;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    opacity: 60%;
+    font-size: 16px;
+}
+
+.divider hr {
+    flex: 1;
+    border: 1px solid #000000 60%;
+}
+
+.divider p {
+    color: #000000;
+    margin: 0 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-buttons button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    background-color: #f0bb78;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-buttons button:hover {
+    background-color: #e0a64d;
+}
+
+.social-buttons img {
+    width: 20px;
+    height: 20px;
+}
