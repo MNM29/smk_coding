@@ -7,66 +7,68 @@
         <link rel="stylesheet" href="kelola.css" />
     </head>
     <body>
-        <header>
-            <div class="logo-text">
-                <img src="../swaranusa_project/assets/logo.png" alt="Logo SwaraNusa" />
-                <h1>SwaraNusa</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#search">Jelajahi</a></li>
-                    <li><a href="#learn">Belajar</a></li>
-                    <li><a href="#about">Tentang</a></li>
-                    <li>
-                        <a href="#contact"><img src="../swaranusa_project/assets/user.png" alt="Logo User" /></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
+        <div class="dashboard-container">
+            <!-- Left Side (Sidebar) -->
             <div class="left-side">
-                <h1>Menu</h1>
-                <div>
+                <div class="logo-text">
+                    <img src="../swaranusa_project/assets/logo_white.png" alt="Logo SwaraNusa" />
+                    <h1>SwaraNusa</h1>
+                </div>
+                <nav class="sidebar-menu">
                     <a href="#dashboard">Dashboard</a>
                     <a href="#analisis">Analisis</a>
                     <a href="#histori">Histori</a>
                     <a href="#kelola">Kelola Akun</a>
-                </div>
+                </nav>
             </div>
-            <div class="right-container">
-                <div class="right-side">
+            <!-- Right Side (Navbar + Content) -->
+            <main class="main-content">
+                <header class="top-navbar">
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#search">Jelajahi</a></li>
+                        <li><a href="#learn">Belajar</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li>
+                            <a href="#contact"><img src="../swaranusa_project/assets/user.png" alt="User" /></a>
+                        </li>
+                    </ul>
+                </header>
+
+                <section class="content-area">
                     <h1>Kelola Akun</h1>
                     <div class="kelola-profile">
                         <img src="../swaranusa_project/assets/profile.png" alt="Profile Photo" />
                         <h2>Admin Eduardo</h2>
                         <p>Kelola data privasi untuk kenyamanan Anda.</p>
                     </div>
+
                     <div class="kelola-content">
                         <div class="kelola-left">
                             <div>
                                 <h3>Akun Anda</h3>
                                 <p>Lihat data akun Anda saat menggunakan website ini.</p>
                                 <hr />
-                                <p>Data akun Anda</p>
+                                <p class="cursor-pointer">Data akun Anda</p>
                             </div>
                             <div>
                                 <h3>Apa yang bisa ditemukan disini?</h3>
                                 <p>Data akun Anda</p>
                                 <hr />
-                                <p>Keamanan akun Anda</p>
+                                <p class="cursor-pointer">Keamanan akun Anda</p>
                             </div>
                         </div>
+
                         <div class="kelola-right">
                             <h3>Keamanan</h3>
-                            <p>Lihat keamanan akun Anda saat menggunakan website ini.</p>
+                            <p class="cursor-pointer">Lihat keamanan akun Anda saat menggunakan website ini.</p>
                             <hr />
                             <h3>Keamanan akun Anda</h3>
                             <p>Akun Anda memiliki tingkat keamanan yang baik</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
