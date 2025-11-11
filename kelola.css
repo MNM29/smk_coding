@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Coolvetica";
+    src: url("../swaranusa_project/assets/Coolvetica\ Rg.otf") format("opentype");
+    font-weight: bold;
+}
+
 /* Reset default browser */
 
 * {
@@ -13,7 +19,7 @@ body {
     height: 100%;
 }
 
-.dashboard-container {
+.menu-container {
     display: flex;
     min-height: 100vh;
 }
@@ -85,8 +91,14 @@ body {
 
 /* Right Side (Navbar + Content) */
 .top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
     background-color: #ffffff;
-    padding: 15px 40px;
+    width: calc(100% - 200px);
+    height: 40px;
+    padding: 0 40px;
 }
 
 .top-navbar ul {
@@ -100,11 +112,11 @@ body {
 .top-navbar ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .content-area {
-    padding: 25px 50px;
+    padding: 65px 50px 65px 50px;
 }
 
 .content-area h1 {
