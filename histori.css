@@ -135,15 +135,15 @@ body {
     align-items: center;
     background-color: #ffffff;
     border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 100%;
 }
 
 .card img {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     object-fit: cover;
-    width: 200px;
+    width: 210px;
     height: auto;
 }
 
@@ -170,8 +170,8 @@ body {
 }
 
 .card-bottom p {
-    color: #ffffff;
-    background-color: #540314;
+    color: #000000;
+    background-color: rgba(240, 180, 127, 0.2);
     border-radius: 10px;
     font-size: 16px;
     padding: 5px 10px;
@@ -183,5 +183,6 @@ body {
     border: none;
     border-radius: 10px;
     font-size: 16px;
+    font-family: "Coolvetica", sans-serif;
     padding: 5px 10px;
 }

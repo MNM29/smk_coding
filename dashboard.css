@@ -142,7 +142,7 @@ body {
     gap: 15px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 100%;
     padding: 25px;
@@ -171,7 +171,7 @@ body {
     gap: 15px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 25px;
 }
 
@@ -180,8 +180,96 @@ body {
     background-color: #f0bb78;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
     font-size: 16px;
     font-family: "Coolvetica", sans-serif;
     max-width: 175px;
     padding: 10px 0;
+    transition: 0.3s;
+}
+
+.container-bottom button:hover {
+    background-color: #d9a76a;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row1 h3,
+.row2 p,
+.row2 div,
+.row3 p,
+.row3 div,
+.row4 p,
+.row4 div {
+    flex: 1;
+}
+
+.row1 {
+    color: #6c6c6c;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px;
+}
+
+.row2,
+.row3,
+.row4 {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px;
+}
+
+.row1 div,
+.row2 div,
+.row3 div,
+.row4 div {
+    display: flex;
+    gap: 10px;
+}
+
+.row1 div button:first-child,
+.row2 div button:first-child,
+.row3 div button:first-child,
+.row4 div button:first-child {
+    color: #000000;
+    background-color: #f0bb78;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.row1 div button:first-child:hover,
+.row2 div button:first-child:hover,
+.row3 div button:first-child:hover,
+.row4 div button:first-child:hover {
+    background-color: #d9a76a;
+}
+
+.row1 div button:last-child,
+.row2 div button:last-child,
+.row3 div button:last-child,
+.row4 div button:last-child {
+    color: #ffffff;
+    background-color: #e57373;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.row1 div button:last-child:hover,
+.row2 div button:last-child:hover,
+.row3 div button:last-child:hover,
+.row4 div button:last-child:hover {
+    background-color: #d15f5f;
 }
