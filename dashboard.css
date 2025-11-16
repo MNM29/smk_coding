@@ -310,11 +310,15 @@ body {
     }
 }
 
-/* Smartphone (max-width: 662px) */
-@media (max-width: 662px) {
+/* Smartphone (max-width: 576px) */
+@media (max-width: 576px) {
     .left-side {
         width: 4.5rem;
         padding: 1rem 0.5rem;
+    }
+
+    .left-side .logo-text {
+        width: 4.5rem;
     }
 
     .left-side .logo-text h1 {
@@ -356,7 +360,6 @@ body {
     }
 
     .container-bottom button {
-        max-width: 100%;
         padding: 0.5rem 0;
     }
 }
