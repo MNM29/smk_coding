@@ -18,7 +18,7 @@ html,
 body {
     background-color: #f8f8f8;
     font-family: "Coolvetica", sans-serif;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .menu-container {
@@ -37,8 +37,9 @@ body {
     position: fixed;
     color: #ffffff;
     background-color: #131010;
-    width: 200px;
-    padding: 25px 0;
+    width: 12.5rem;
+    min-height: 100vh;
+    padding: 1.5rem 0;
 }
 
 .left-side .logo-text {
@@ -47,8 +48,8 @@ body {
     justify-content: center;
     gap: 15px;
     border-bottom: 1px solid #ffffff;
-    width: 200px;
-    margin-bottom: 25px;
+    width: 12.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .left-side .logo-text h1 {
@@ -75,7 +76,7 @@ body {
     text-align: center;
     text-decoration: none;
     width: 100%;
-    padding: 15px 0;
+    padding: 1rem 0;
     transition: 0.3s;
 }
 
@@ -86,9 +87,9 @@ body {
 
 .main-content {
     display: flex;
-    flex-direction: column;
     flex: 1;
-    margin-left: 200px;
+    flex-direction: column;
+    margin-left: 12.5rem;
 }
 
 /* Right Side (Navbar + Content) */
@@ -96,11 +97,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: fixed;
+    position: sticky;
+    top: 0;
     background-color: #ffffff;
-    width: calc(100% - 200px);
-    height: 40px;
-    padding: 0 40px;
+    left: 12.5rem;
+    right: 0;
+    width: auto;
+    padding: 0.75rem 2.5rem;
 }
 
 .top-navbar ul {
@@ -118,7 +121,7 @@ body {
 }
 
 .content-area {
-    padding: 65px 50px;
+    padding: 2rem 3rem;
 }
 
 .content-area h1 {
@@ -146,6 +149,11 @@ body {
     width: 100%;
 }
 
+.container-left,
+.container-right {
+    flex: 1 1 30rem;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -157,13 +165,16 @@ body {
     padding: 20px;
 }
 
-.container-left .card .image-wrapper img {
-    width: 50%;
-    height: auto;
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-right .card .image-wrapper img {
-    width: 50%;
+.image-wrapper img {
+    width: 100%;
+    max-width: 15rem;
+    min-width: 10rem;
     height: auto;
 }
 
@@ -182,8 +193,96 @@ body {
     border-bottom: none;
 }
 
-.image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Desktop (min-width: 992px) */
+@media (min-width: 992px) {
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .left-side {
+        position: relative;
+        width: 100%;
+        padding: 1rem 0;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .top-navbar {
+        justify-content: center;
+        left: 0;
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    .analisis-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .content-area {
+        padding: 1.5rem 1rem;
+    }
+
+    .image-wrapper img {
+        max-width: 16rem;
+    }
+}
+
+/* Smartphone (max-width: 576px) */
+@media (max-width: 576px) {
+    .left-side {
+        width: 4.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .left-side .logo-text h1 {
+        display: none;
+    }
+
+    .sidebar-menu a {
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .top-navbar {
+        justify-content: flex-end;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .top-navbar ul {
+        gap: 0.75rem;
+    }
+
+    .top-navbar ul li a {
+        font-size: 0.75rem;
+    }
+
+    .content-area {
+        padding: 1rem;
+    }
+
+    .analisis-container {
+        flex-direction: column;
+    }
+
+    .image-wrapper img {
+        max-width: 12rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
 }
