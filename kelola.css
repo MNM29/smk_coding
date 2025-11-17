@@ -37,8 +37,9 @@ body {
     position: fixed;
     color: #ffffff;
     background-color: #131010;
-    width: 200px;
-    padding: 25px 0;
+    width: 12.5rem;
+    min-height: 100vh;
+    padding: 1.5rem 0;
 }
 
 .left-side .logo-text {
@@ -47,8 +48,8 @@ body {
     justify-content: center;
     gap: 15px;
     border-bottom: 1px solid #ffffff;
-    width: 200px;
-    margin-bottom: 25px;
+    width: 12.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .left-side .logo-text h1 {
@@ -74,8 +75,9 @@ body {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
     width: 100%;
-    padding: 15px 0;
+    padding: 1rem 0;
     transition: 0.3s;
 }
 
@@ -88,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-left: 200px;
+    margin-left: 12.5rem;
 }
 
 /* Right Side (Navbar + Content) */
@@ -96,11 +98,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: fixed;
+    position: sticky;
+    top: 0;
     background-color: #ffffff;
-    width: calc(100% - 200px);
-    height: 40px;
-    padding: 0 40px;
+    left: 12.5rem;
+    right: 0;
+    width: auto;
+    padding: 0.75rem 2.5rem;
 }
 
 .top-navbar ul {
@@ -108,21 +112,29 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     list-style: none;
 }
 
 .top-navbar ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 16px;
 }
 
 .content-area {
-    padding: 65px 50px 65px 50px;
+    padding: 2rem 3rem;
 }
 
 .content-area h1 {
     margin-bottom: 20px;
+}
+
+.kelola-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
 
 .kelola-profile {
@@ -139,6 +151,11 @@ body {
     object-fit: cover;
     width: 100px;
     height: 100px;
+}
+
+.kelola-profile {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 .kelola-content {
@@ -180,8 +197,129 @@ body {
 .kelola-right {
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 25px;
-    flex: 1;
     max-width: 470px;
     min-width: 300px;
+}
+
+.kelola-left div p,
+.kelola-right p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+/* Desktop (min-width: 992px) */
+@media (min-width: 992px) {
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .left-side {
+        position: relative;
+        width: 100%;
+        padding: 1rem 0;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .top-navbar {
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+    }
+
+    .content-area {
+        padding: 1.5rem 1rem;
+    }
+
+    .kelola-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    .kelola-content {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .kelola-left div,
+    .kelola-right {
+        max-width: 90%;
+        min-width: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .kelola-profile img {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+/* Smartphone (max-width: 576px) */
+@media (max-width: 576px) {
+    .left-side {
+        width: 4.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .left-side .logo-text h1 {
+        display: none;
+    }
+
+    .sidebar-menu a {
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .top-navbar {
+        justify-content: flex-end;
+        padding: 0.5rem 0.75rem;
+        left: 0;
+        width: 100%;
+    }
+
+    .top-navbar ul {
+        gap: 0.75rem;
+        font-size: 12px;
+    }
+
+    .content-area {
+        padding: 1rem;
+    }
+
+    .kelola-profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .kelola-content {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .kelola-left div,
+    .kelola-right {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .kelola-left div p,
+    .kelola-right p {
+        font-size: 12px;
+    }
 }

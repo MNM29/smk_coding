@@ -75,6 +75,7 @@ body {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
     width: 100%;
     padding: 1rem 0;
     transition: 0.3s;
@@ -111,13 +112,14 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     list-style: none;
 }
 
 .top-navbar ul li a {
     color: #333333;
     text-decoration: none;
-    font-size: 16px;
 }
 
 .content-area {
@@ -145,11 +147,13 @@ body {
 }
 
 .card img {
+    display: block;
+    width: 100%;
+    max-width: 13rem; /* desktop default visual width */
+    height: auto;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    object-fit: cover;
-    width: 13rem;
-    height: auto;
 }
 
 .card-content {
@@ -166,6 +170,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
+}
+
+.card-top p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 .card-bottom {
@@ -209,6 +218,17 @@ body {
         width: 100%;
         padding: 1rem 0;
         height: auto;
+        min-height: auto;
+    }
+
+    .left-side .logo-text {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar-menu a {
+        font-size: 12px;
+        padding: 0.75rem 0.5rem;
     }
 
     .main-content {
@@ -222,9 +242,52 @@ body {
         padding: 0.75rem 1rem;
     }
 
+    .top-navbar {
+        justify-content: flex-end;
+        left: 0;
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    .top-navbar ul {
+        gap: 20px;
+        justify-content: flex-end;
+    }
+
     .cards-container {
-        flex-direction: column;
-        align-items: center;
+        gap: 20px;
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .card img {
+        width: 10rem;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 12px;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .card-top p {
+        font-size: 13px;
+    }
+
+    .card-bottom p,
+    .card-bottom button {
+        font-size: 13px;
+        padding: 5px 8px;
     }
 }
 
@@ -235,12 +298,17 @@ body {
         padding: 1rem 0.5rem;
     }
 
+    .left-side .logo-text {
+        width: 4.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     .left-side .logo-text h1 {
         display: none;
     }
 
     .sidebar-menu a {
-        font-size: 0.75rem;
+        font-size: 10px;
         padding: 0.5rem 0;
     }
 
@@ -251,22 +319,83 @@ body {
     .top-navbar {
         justify-content: flex-end;
         padding: 0.5rem 0.75rem;
+        left: 0;
+        width: 100%;
     }
 
     .top-navbar ul {
-        gap: 0.75rem;
+        gap: 0.5rem;
+        justify-content: flex-end;
     }
 
     .top-navbar ul li a {
         font-size: 0.75rem;
     }
 
-    .analisis-container {
+    .content-area {
+        padding: 0.75rem;
+    }
+
+    .cards-container {
         flex-direction: column;
-        align-items: center;
     }
 
     .card {
-        padding: 1rem;
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card img {
+        width: 8.5rem;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 8px;
+        margin: 0;
+        gap: 8px;
+    }
+
+    .card-top p {
+        font-size: 12px;
+    }
+
+    .card-bottom p,
+    .card-bottom button {
+        font-size: 12px;
+        padding: 4px 7px;
+    }
+}
+
+/* ...existing code... */
+
+@media (min-width: 992px) {
+    .card {
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .image-wrapper {
+        flex: 0 0 13rem;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 18px 20px;
+        margin: 0;
     }
 }
