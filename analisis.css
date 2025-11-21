@@ -37,9 +37,9 @@ body {
     position: fixed;
     color: #ffffff;
     background-color: #131010;
-    width: 12.5rem;
+    width: 200px;
     min-height: 100vh;
-    padding: 1.5rem 0;
+    padding: 24px 0;
 }
 
 .left-side .logo-text {
@@ -48,8 +48,8 @@ body {
     justify-content: center;
     gap: 15px;
     border-bottom: 1px solid #ffffff;
-    width: 12.5rem;
-    margin-bottom: 1.5rem;
+    width: 200px;
+    margin-bottom: 24px;
 }
 
 .left-side .logo-text h1 {
@@ -68,29 +68,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
 }
 
-.sidebar-menu a {
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+.sidebar-menu div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
     width: 100%;
-    padding: 1rem 0;
-    transition: 0.3s;
+    padding: 15px 25px;
 }
 
-.sidebar-menu a:hover {
+.sidebar-menu div:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+}
+
+.sidebar-menu div a {
+    color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    transition: 0.3s;
 }
 
 .main-content {
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin-left: 12.5rem;
+    margin-left: 200px;
 }
 
 /* Right Side (Navbar + Content) */
@@ -101,10 +108,10 @@ body {
     position: sticky;
     top: 0;
     background-color: #ffffff;
-    left: 12.5rem;
+    left: 200px;
     right: 0;
     width: auto;
-    padding: 0.75rem 2.5rem;
+    padding: 12px 40px;
 }
 
 .top-navbar ul {
@@ -123,7 +130,7 @@ body {
 }
 
 .content-area {
-    padding: 2rem 3rem;
+    padding: 32px 48px;
 }
 
 .content-area h1 {
@@ -153,7 +160,7 @@ body {
 
 .container-left,
 .container-right {
-    flex: 1 1 30rem;
+    flex: 1 1 480px;
 }
 
 .card {
@@ -175,8 +182,8 @@ body {
 
 .image-wrapper img {
     width: 100%;
-    max-width: 15rem;
-    min-width: 10rem;
+    max-width: 240px;
+    min-width: 160px;
     height: auto;
 }
 
@@ -197,28 +204,32 @@ body {
     border-bottom: none;
 }
 
-/* Desktop (min-width: 992px) */
-@media (min-width: 992px) {
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
 }
 
-/* Tablet (max-width: 768px) */
-@media (max-width: 768px) {
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
     .left-side {
         position: relative;
-        width: 100%;
-        padding: 1rem 0;
+        width: 160px;
+        padding: 16px 0;
         height: auto;
         min-height: auto;
     }
 
     .left-side .logo-text {
-        width: 100%;
-        margin-bottom: 1rem;
+        width: 160px;
+        margin-bottom: 16px;
+    }
+
+    .sidebar-menu div {
+        gap: 5px;
     }
 
     .sidebar-menu a {
         font-size: 12px;
-        padding: 0.75rem 0.5rem;
+        padding: 12px 8px;
     }
 
     .main-content {
@@ -229,14 +240,14 @@ body {
         justify-content: center;
         left: 0;
         width: 100%;
-        padding: 0.75rem 1rem;
+        padding: 12px 16px;
     }
 
     .top-navbar {
         justify-content: flex-end;
         left: 0;
         width: 100%;
-        padding: 0.75rem 1rem;
+        padding: 12px 16px;
     }
 
     .top-navbar ul {
@@ -246,7 +257,7 @@ body {
 
     .analisis-container {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 24px;
     }
 
     .container-left,
@@ -256,24 +267,24 @@ body {
     }
 
     .content-area {
-        padding: 1.5rem 1rem;
+        padding: 24px 16px;
     }
 
     .image-wrapper img {
-        max-width: 16rem;
+        max-width: 256px;
     }
 }
 
-/* Smartphone (max-width: 576px) */
-@media (max-width: 576px) {
+/* Smartphone (max-width: 600px) */
+@media (max-width: 600px) {
     .left-side {
-        width: 4.5rem;
-        padding: 1rem 0.5rem;
+        width: 80px;
+        padding: 16px 8px;
     }
 
     .left-side .logo-text {
-        width: 4.5rem;
-        margin-bottom: 0.5rem;
+        width: 80px;
+        margin-bottom: 8px;
     }
 
     .left-side .logo-text h1 {
@@ -282,7 +293,7 @@ body {
 
     .sidebar-menu a {
         font-size: 10px;
-        padding: 0.5rem 0;
+        padding: 8px 0;
     }
 
     .main-content {
@@ -291,22 +302,22 @@ body {
 
     .top-navbar {
         justify-content: flex-end;
-        padding: 0.5rem 0.75rem;
+        padding: 8px 12px;
         left: 0;
         width: 100%;
     }
 
     .top-navbar ul {
-        gap: 0.5rem;
+        gap: 8px;
         justify-content: flex-end;
     }
 
     .top-navbar ul li a {
-        font-size: 0.75rem;
+        font-size: 12px;
     }
 
     .content-area {
-        padding: 0.75rem;
+        padding: 12px;
     }
 
     .analisis-container {
@@ -314,10 +325,10 @@ body {
     }
 
     .image-wrapper img {
-        max-width: 12rem;
+        max-width: 192px;
     }
 
     .card {
-        padding: 1rem;
+        padding: 16px;
     }
 }
