@@ -91,6 +91,8 @@ body {
 
 .right-side p {
     color: #555;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 25px;
 }
 
@@ -148,6 +150,8 @@ form input {
 
 .divider p {
     color: #000000;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
     margin: 0 10px;
 }
 
@@ -162,7 +166,7 @@ form input {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    color: #ffffff;
+    color: #000000;
     background-color: #f0bb78;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -183,10 +187,6 @@ form input {
 
 /* Desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
-    .container {
-        width: 90vw;
-        height: 90vh;
-    }
 }
 
 /* Tablet (max-width: 1024px) */

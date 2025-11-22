@@ -295,8 +295,6 @@ body {
         position: relative;
         width: 160px;
         padding: 16px 0;
-        height: auto;
-        min-height: auto;
     }
 
     .left-side .logo-text {
@@ -304,7 +302,11 @@ body {
         margin-bottom: 16px;
     }
 
-    .sidebar-menu a {
+    .sidebar-menu div {
+        gap: 5px;
+    }
+
+    .sidebar-menu div a {
         font-size: 12px;
         padding: 12px 8px;
     }
@@ -315,14 +317,17 @@ body {
 
     .top-navbar {
         justify-content: flex-end;
+        padding: 12px 16px;
         left: 0;
         width: 100%;
-        padding: 12px 16px;
     }
 
     .top-navbar ul {
         gap: 20px;
-        justify-content: flex-end;
+    }
+
+    .top-navbar ul li a {
+        font-size: 12px;
     }
 
     .content-area {
@@ -383,7 +388,13 @@ body {
         display: none;
     }
 
-    .sidebar-menu a {
+    .sidebar-menu div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sidebar-menu div a {
+        text-align: center;
         font-size: 10px;
         padding: 8px 0;
     }
@@ -401,11 +412,10 @@ body {
 
     .top-navbar ul {
         gap: 8px;
-        justify-content: flex-end;
     }
 
     .top-navbar ul li a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .content-area {
