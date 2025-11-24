@@ -265,7 +265,6 @@ nav ul li a.active {
     cursor: pointer;
     font-size: 16px;
     font-family: "Coolvetica", sans-serif;
-    font-weight: 700;
     max-width: 175px;
     padding: 10px 0;
     transition: 0.3s;
@@ -298,7 +297,7 @@ nav ul li a.active {
 .row4 div {
     flex: 1;
     font-size: 16px;
-    font-family: "Coolvetica", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
@@ -318,7 +317,6 @@ nav ul li a.active {
     padding: 10px;
 }
 
-.row1 div,
 .row2 div,
 .row3 div,
 .row4 div {
@@ -326,7 +324,6 @@ nav ul li a.active {
     gap: 10px;
 }
 
-.row1 div button:first-child,
 .row2 div button:first-child,
 .row3 div button:first-child,
 .row4 div button:first-child {
@@ -339,14 +336,12 @@ nav ul li a.active {
     transition: 0.3s;
 }
 
-.row1 div button:first-child:hover,
 .row2 div button:first-child:hover,
 .row3 div button:first-child:hover,
 .row4 div button:first-child:hover {
     background-color: #d9a76a;
 }
 
-.row1 div button:last-child,
 .row2 div button:last-child,
 .row3 div button:last-child,
 .row4 div button:last-child {
@@ -359,7 +354,6 @@ nav ul li a.active {
     transition: 0.3s;
 }
 
-.row1 div button:last-child:hover,
 .row2 div button:last-child:hover,
 .row3 div button:last-child:hover,
 .row4 div button:last-child:hover {
