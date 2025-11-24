@@ -41,18 +41,31 @@
 
             <!-- Right Side (Navbar + Content) -->
             <main class="main-content">
-                <header class="top-navbar">
-                    <ul>
-                        <li><a href="../swaranusa_project/landing.html">Beranda</a></li>
-                        <li><a href="#search">Jelajahi</a></li>
-                        <li><a href="#learn">Belajar</a></li>
-                        <li><a href="#about">Tentang</a></li>
-                        <li>
-                            <a href="../swaranusa_project/login.html"
-                                ><img src="../swaranusa_project/assets/user.png" alt="User"
-                            /></a>
-                        </li>
+                <header>
+                    <ul class="logo-navbar">
+                        <li></li>
+                        <li><h1></h1></li>
                     </ul>
+                    <!-- Hamburger -->
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav id="navMenu">
+                        <ul>
+                            <li><a href="../swaranusa_project/landing.html" onclick="closeMenu()">Beranda</a></li>
+                            <li><a href="jelajahi.html" onclick="closeMenu()">Jelajahi</a></li>
+                            <li><a href="belajar.html" onclick="closeMenu()">Belajar</a></li>
+                            <li><a href="tentang.html" onclick="closeMenu()">Tentang</a></li>
+                            <li>
+                                <a href="../swaranusa_project/login.html" onclick="closeMenu()">
+                                    <img src="../swaranusa_project/assets/user.png" alt="User"
+                                /></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
                 <section class="content-area">
                     <h1>Dashboard</h1>
@@ -122,5 +135,31 @@
                 </section>
             </main>
         </div>
+        <script>
+            function toggleMenu() {
+                const nav = document.getElementById("navMenu");
+                const hamburger = document.querySelector(".hamburger");
+                nav.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            }
+
+            function closeMenu() {
+                const nav = document.getElementById("navMenu");
+                const hamburger = document.querySelector(".hamburger");
+                nav.classList.remove("active");
+                hamburger.classList.remove("active");
+            }
+
+            document.addEventListener("click", function (event) {
+                const nav = document.getElementById("navMenu");
+                const hamburger = document.querySelector(".hamburger");
+                const isClickInsideNav = nav.contains(event.target);
+                const isClickOnHamburger = hamburger.contains(event.target);
+
+                if (!isClickInsideNav && !isClickOnHamburger && nav.classList.contains("active")) {
+                    closeMenu();
+                }
+            });
+        </script>
     </body>
 </html>
