@@ -8,18 +8,30 @@
     </head>
     <body>
         <header>
-            <div class="logo-text">
-                <img src="../swaranusa_project/assets/logo.png" alt="Logo SwaraNusa" />
-                <h1>SwaraNusa</h1>
+            <ul class="logo-navbar">
+                <li>
+                    <img src="../swaranusa_project/assets/logo.png" width="20px" height="30px" />
+                </li>
+                <li><h1>SwaraNusa</h1></li>
+            </ul>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <nav>
+
+            <nav id="navMenu">
                 <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#search">Jelajahi</a></li>
-                    <li><a href="#learn">Belajar</a></li>
-                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="../swaranusa_project/landing.html" onclick="closeMenu()">Beranda</a></li>
+                    <li><a href="jelajahi.html" onclick="closeMenu()">Jelajahi</a></li>
+                    <li><a href="belajar.html" onclick="closeMenu()">Belajar</a></li>
+                    <li><a href="tentang.html" onclick="closeMenu()">Tentang</a></li>
                     <li>
-                        <a href="#contact"><img src="../swaranusa_project/assets/user.png" alt="Logo User" /></a>
+                        <a href="../swaranusa_project/login.html" onclick="closeMenu()">
+                            <img src="../swaranusa_project/assets/user.png" alt="User"
+                        /></a>
                     </li>
                 </ul>
             </nav>
@@ -39,35 +51,85 @@
                 <h3>Populer Minggu Ini</h3>
                 <div class="populer-container">
                     <div class="populer-top">
-                        <img
-                            src="../swaranusa_project/assets/original-hero/gambar-kolintang.png"
-                            alt="Gambar Kolintang"
-                        />
-                        <div class="top-right">
-                            <img src="../swaranusa_project/assets/original-hero/gambar-sape.png" alt="Gambar Sape" />
+                        <div class="img-wrapper">
                             <img
-                                src="../swaranusa_project/assets/original-hero/gambar-gambus.png"
-                                alt="Gambar Gambus"
+                                src="../swaranusa_project/assets/original-hero/gambar-kolintang.png"
+                                alt="Gambar Kolintang"
                             />
+                            <div class="img-overlay">
+                                <h3>Kolintang</h3>
+                                <p>Sulawesi Utara</p>
+                            </div>
+                        </div>
+
+                        <div class="top-right">
+                            <div class="img-wrapper">
+                                <img
+                                    src="../swaranusa_project/assets/original-hero/gambar-sape.png"
+                                    alt="Gambar Sape"
+                                />
+                                <div class="img-overlay">
+                                    <h3>Sape</h3>
+                                    <p>Sumatra</p>
+                                </div>
+                            </div>
+                            <div class="img-wrapper">
+                                <img
+                                    src="../swaranusa_project/assets/original-hero/gambar-gambus.png"
+                                    alt="Gambar Gambus"
+                                />
+                                <div class="img-overlay">
+                                    <h3>Gambus</h3>
+                                    <p>Kalimantan</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="populer-bottom">
-                        <img
-                            src="../swaranusa_project/assets/original-hero/gambar-angklung.png"
-                            alt="Gambar Angklung"
-                        />
+                        <div class="img-wrapper">
+                            <img
+                                src="../swaranusa_project/assets/original-hero/gambar-angklung.png"
+                                alt="Gambar Angklung"
+                            />
+                            <div class="img-overlay">
+                                <h3>Angklung</h3>
+                                <p>Jawa Barat</p>
+                            </div>
+                        </div>
+
                         <div class="bottom-container">
                             <div class="bottom-right-top">
-                                <img
-                                    src="../swaranusa_project/assets/original-hero/gambar-rebab.png"
-                                    alt="Gambar Rebab"
-                                />
-                                <img
-                                    src="../swaranusa_project/assets/original-hero/gambar-gamelan.png"
-                                    alt="Gambar Gamelan"
-                                />
+                                <div class="img-wrapper">
+                                    <img
+                                        src="../swaranusa_project/assets/original-hero/gambar-rebab.png"
+                                        alt="Gambar Rebab"
+                                    />
+                                    <div class="img-overlay">
+                                        <h3>Rebab</h3>
+                                        <p>Kalimantan</p>
+                                    </div>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img
+                                        src="../swaranusa_project/assets/original-hero/gambar-gamelan.png"
+                                        alt="Gambar Gamelan"
+                                    />
+                                    <div class="img-overlay">
+                                        <h3>Gamelan</h3>
+                                        <p>Jawa Tengah</p>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="../swaranusa_project/assets/original-hero/gambar-tifa.png" alt="Gambar Tifa" />
+                            <div class="img-wrapper">
+                                <img
+                                    src="../swaranusa_project/assets/original-hero/gambar-tifa.png"
+                                    alt="Gambar Tifa"
+                                />
+                                <div class="img-overlay">
+                                    <h3>Tifa</h3>
+                                    <p>Maluku Utara</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,5 +219,31 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function toggleMenu() {
+                const nav = document.getElementById("navMenu");
+                const hamburger = document.querySelector(".hamburger");
+                nav.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            }
+
+            function closeMenu() {
+                const nav = document.getElementById("navMenu");
+                const hamburger = document.querySelector(".hamburger");
+                nav.classList.remove("active");
+                hamburger.classList.remove("active");
+            }
+
+            document.addEventListener("click", function (event) {
+                const nav = document.getElementById("navMenu");
+                const hamburger = document.querySelector(".hamburger");
+                const isClickInsideNav = nav.contains(event.target);
+                const isClickOnHamburger = hamburger.contains(event.target);
+
+                if (!isClickInsideNav && !isClickOnHamburger && nav.classList.contains("active")) {
+                    closeMenu();
+                }
+            });
+        </script>
     </body>
 </html>
