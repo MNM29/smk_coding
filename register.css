@@ -281,12 +281,7 @@ form input {
         font-size: 15px;
     }
 
-    .social-buttons {
-        flex-direction: column;
-    }
-
     .name-group {
-        flex-direction: column;
-        gap: 8px;
+        gap: 0;
     }
 }
