@@ -136,6 +136,28 @@
                 </section>
             </main>
         </div>
+
+        <!-- Popup -->
+        <div id="popup-edit" class="popup-overlay">
+            <div class="popup-container">
+                <div class="left-content">
+                    <img src="../swaranusa_project/assets/gambar-gamelan.png" alt="Gambar Gamelan" />
+                </div>
+                <div class="right-content">
+                    <h3>Judul</h3>
+                    <p id="popup-judul">Gamelan</p>
+                    <h3>Deskripsi</h3>
+                    <p id="popup-deskripsi">
+                        Koleksi kelangkap gamelan yang berisi berbagai instrumen seperti gong, bonang, saron, dan
+                        kendang yang memiliki tangga nada pentatonis dalam sistem tangga nada (laras) slendro dan pelog.
+                        Gamelan berasal dari Jawa Tengah lalu tersebar diberbagai daerah, seperti Madura, Bali,
+                        Kalimantan, dan Lombok. Sejak 2021, seluruh instrumen gamelan secara resmi diakui oleh UNESCO
+                        sebagai salah satu Mahakarya Warisan Budaya Lisan dan Takbenda yang berasal dari Indonesia.
+                    </p>
+                    <button onclick="closePopup()">Simpan</button>
+                </div>
+            </div>
+        </div>
         <script>
             function toggleMenu() {
                 const nav = document.getElementById("navMenu");
@@ -161,6 +183,20 @@
                     closeMenu();
                 }
             });
+
+            const popup = document.getElementById("popup-edit");
+            const popupJudul = document.getElementById("popup-judul");
+            const popupDeskripsi = document.getElementById("popup-deskripsi");
+
+            document.querySelectorAll(".container-flex button:first-child").forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    popup.classList.add("active");
+                });
+            });
+
+            function closePopup() {
+                popup.classList.remove("active");
+            }
         </script>
     </body>
 </html>

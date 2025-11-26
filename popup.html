@@ -82,22 +82,24 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="left-side">
-                <img src="../swaranusa_project/assets/gambar-gamelan.png" alt="Gambar Gamelan" />
-            </div>
-            <div class="right-side">
-                <h3>Judul</h3>
-                <p>Gamelan</p>
-                <h3>Deskripsi</h3>
-                <p>
-                    Koleksi kelangkap gamelan yang berisi berbagai instrumen seperti gong, bonang, saron, dan kendang
-                    yang memiliki tangga nada pentatonis dalam sistem tangga nada (laras) slendro dan pelog. Gamelan
-                    berasal dari Jawa Tengah lalu tersebar diberbagai daerah, seperti Madura, Bali, Kalimantan, dan
-                    Lombok. Sejak 2021, seluruh instrumen gamelan secara resmi diakui oleh UNESCO sebagai salah satu
-                    Mahakarya Warisan Budaya Lisan dan Takbenda yang berasal dari Indonesia.
-                </p>
-                <button>Simpan</button>
+        <div id="popupEdit" class="popup-overlay">
+            <div class="container">
+                <div class="left-side">
+                    <img src="../swaranusa_project/assets/gambar-gamelan.png" alt="Gambar Gamelan" />
+                </div>
+                <div class="right-side">
+                    <h3>Judul</h3>
+                    <p id="popup-judul">Gamelan</p>
+                    <h3>Deskripsi</h3>
+                    <p id="popup-deskripsi">
+                        Koleksi kelangkap gamelan yang berisi berbagai instrumen seperti gong, bonang, saron, dan
+                        kendang yang memiliki tangga nada pentatonis dalam sistem tangga nada (laras) slendro dan pelog.
+                        Gamelan berasal dari Jawa Tengah lalu tersebar diberbagai daerah, seperti Madura, Bali,
+                        Kalimantan, dan Lombok. Sejak 2021, seluruh instrumen gamelan secara resmi diakui oleh UNESCO
+                        sebagai salah satu Mahakarya Warisan Budaya Lisan dan Takbenda yang berasal dari Indonesia.
+                    </p>
+                    <button onclick="closePopup()">Simpan</button>
+                </div>
             </div>
         </div>
     </body>
