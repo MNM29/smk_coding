@@ -130,6 +130,21 @@ form input {
     margin-bottom: 10px;
 }
 
+.right-side form a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5px 0;
+}
+
+.right-side form a:hover {
+    text-decoration: underline;
+}
+
 .submit-button {
     color: #ffffff;
     background-color: #a77944;
